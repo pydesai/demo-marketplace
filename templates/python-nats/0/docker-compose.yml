@@ -1,0 +1,8 @@
+version: "2"
+
+services:
+  python-nats:
+    image: 192.168.1.93/python-nats:latest
+    environment:
+      - PYNATS_TOPIC=${NATS_TOPIC}
+    network_mode: host
